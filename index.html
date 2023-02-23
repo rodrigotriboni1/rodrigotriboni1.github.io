@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">EcoJuice</h1>
+            <p id="description">EcoJuice</p>
+        </header>
+        <form 
+            method="POST" 
+            action="https://script.google.com/macros/s/AKfycbwHsAtKnQpKkzznHq4XpnawV3i5NO2aKnVho3BIxxTD-U6mRCtA-nBuBz7BG1faNqIn/exec"
+            id="survey-form">
+
+            <div class="form-group">
+                <label for="name" id="name-label">Nome</label>
+                <input type="text" name="Name" id="name" placeholder="Digite seu nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="Email" id="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Selecione o sabor</label>
+                <div class="radio-group">
+                    <input type="radio" name="Sabor" id="laranja" value="laranja"><label for="laranja"> Laranja </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="Sabor" id="uva" value="uva"><label for="uva"> Uva </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="Sabor" id="maracuja" value="maracuja"><label for="maracuja"> Maracuja </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="Sabor" id="goiaba" value="goiaba"><label for="goiaba"> Goiaba </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="Sabor" id="tangerina" value="tangerina"><label for="tangerina">
+                        Tangerina
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Selecione o tipo</label>
+                <div class="radio-group">
+                    <input type="radio" name="Tipo" id="ml_300" value="ml_300"><label for="ml_300"> 300 ml </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="Tipo" id="ml_500" value="ml_500"><label for="ml_500"> 500 ml </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="Tipo" id="litro_1" value="litro_1"><label for="litro_1"> 1 Litro </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="Tipo" id="litro_2" value="litro_2"><label for="litro_2"> 2 Litros </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="Tipo" id="galao" value="galao"><label for="galao"> Galão </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="Tipo" id="concentrado" value="concentrado"><label for="concentrado">
+                        Concentrado
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="quantidade" id="quantidade">Quantidade</label>
+                <input type="number" name="Quantidade" id="email" placeholder="Digite a quantidade vendida" required>
+            </div>
+            <div class="form-group">
+                <button id="submit" type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
